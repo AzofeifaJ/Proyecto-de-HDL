@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+//decodificación del código de gray, de contador binario a código de gray
 module binario_a_gray(bin,gray);
 
 input [3:0] bin;
@@ -31,7 +32,7 @@ assign gray[0]=bin[1]^bin[0];
 
 endmodule
 
-
+//decodificación del código de gray, de contador binario a codigo de gray
 module binario_a_gray_tb();
 
 reg [3:0] in;
@@ -54,7 +55,7 @@ $stop;
 end
 endmodule
 
-
+//encendido de LEDS en la NEXYS4
 module disenodigital(
 input wire [3:0] sw,
 output wire [6:0] a_to_g,
@@ -62,23 +63,25 @@ output wire [7:0] an,
 output wire dp
     );
  
-assign an=8'b11111110;
-assign dp=1;
-hex7seg D1(.x(sw), .a_to_g(a_to_g));
+assign an=8'b11111110; //habilitación de dígitos
+assign dp=1; //
+hex7seg D1(.x(sw), .a_to_g(a_to_g)); //hexadecimal a 7 segmentos
 
 endmodule
 
 
 
 
-
+ // función hexadecimal a 7 segmentos
 module hex7seg(
     input wire [3:0]x,
-    output reg [6:0]a_to_g
+    output reg [6:0]a_to_g //conectado de a a g
     );
     
  always@(*)
  begin
+ 
+ //Casos en los interruptores para mostral los números
     case(x)
     0: a_to_g = 7'b0000001;
     1: a_to_g = 7'b1001111;
