@@ -83,6 +83,7 @@ assign dp=1; //
 hex7seg D1(.x(sw), .a_to_g(a_to_g)); //hexadecimal a 7 segmentos
 
 endmodule
+```
 
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
 En este stercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles.
