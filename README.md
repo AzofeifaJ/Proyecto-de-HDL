@@ -152,7 +152,24 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 ## Diagramas de estado de las FSM diseñadas
 
 
+
+
 ## Simulación funcional del sistema completo
+
+Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
+
+#### Sesiones realizadas entre los integrantes del grupo para visualizar el procedimiento realizado en Verilog para NEXYS 4
+
+![image](https://user-images.githubusercontent.com/111375712/194734261-98dcac3d-816e-41a6-911a-89448dc3df1c.png)
+
+
+#### Utilización de Verilog para NEXYS 4
+
+![image](https://user-images.githubusercontent.com/111375712/194734288-56ff2af4-d5b1-48fe-a763-d41032d04a6e.png)
+
+![image](https://user-images.githubusercontent.com/111375712/194966269-b75db593-a7e6-476a-a9e0-6353bafa2141.png)
+
+
 
 
 ## Análisis de consumo de recursos en la FPGA
@@ -163,7 +180,4 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 
 ## Problemas hallados durante el trabajo
-Durante el presente trabajo se generaron una serie de problemas desde su inicio, los cuales se detallan a continuación: el primer inconveniente se generó al realizar la instalación del programa de Vivado ya que no se pudo utilizar el correo institucional, el problema se solucionó al utilizar el correo personal. Por otro lado un siguiente problema se produjo durante la codificación de dos subsistemas, lo cuales correspondieron al refrescamiento de las luces al menos cada 500 ms dentro del despliegue de código ingresado traducido a formato binario en luces LED y el subsistema de despliegue de código decodificado en display de 7 segmentos, el inconveniente se presentó a la correcta implementación del subsistema, este requirió una mayor inversión de tiempo por parte de los estudiantes, mediante la investigación y la recolección de información para poder realizarse. Ade´mas  
-
-
-
+Durante el presente trabajo se generaron una serie de problemas desde su inicio, los cuales se detallan a continuación: el primer inconveniente se generó al realizar la instalación del programa de Vivado ya que no se pudo utilizar el correo institucional, el problema se solucionó al utilizar el correo personal. Por otro lado un siguiente problema se produjo durante la codificación de dos subsistemas, lo cuales correspondieron al refrescamiento de las luces al menos cada 500 ms dentro del despliegue de código ingresado traducido a formato binario en luces LED y el subsistema de despliegue de código decodificado en display de 7 segmentos, el inconveniente se presentó con la correcta implementación del subsistema, este requirió una mayor inversión de tiempo por parte de los estudiantes, mediante la investigación y la recolección de información para poder realizarse, además se logró solucionar con la ayuda del profesor durante la reunión realizada en la verificación del avance y el cumplimiento del plan de trabajo del proyecto.
