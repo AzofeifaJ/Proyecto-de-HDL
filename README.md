@@ -88,7 +88,7 @@ endmodule
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
 En este stercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles.
 
-### Código decodificado en display de 7 segmentos. 
+#### Código decodificado en display de 7 segmentos. 
 ```SystemVerilog
 // función hexadecimal a 7 segmentos
 module hex7seg(
@@ -123,6 +123,30 @@ module hex7seg(
 ```
 
 ## Diagramas de bloques de cada subsistema
+A continuación se muestra un diagrama de bloques sobre el funcionamiento general del circuito decodificador de Gray, así como un diagrama de bloques para cada subsistema de lectura, con su funcionalidad descrita y su esquema de interconexión, además con el registro de entradas y salidas, sus diagramas de estado y las señales de control de cada bloque en la ruta de datos.
+
+#### Funcionamiento general
+
+
+
+
+
+#### Subsistema de lectura y decodificación de código Gray.
+
+
+
+
+
+#### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
+
+
+
+
+
+#### Subsistema de despliegue de código decodificado en display de 7 segmentos.
+
+
+
 
 
 ## Diagramas de estado de las FSM diseñadas
@@ -139,4 +163,7 @@ module hex7seg(
 
 
 ## Problemas hallados durante el trabajo
+Durante el presente trabajo se generaron una serie de problemas desde su inicio, los cuales se detallan a continuación: el primer inconveniente se generó al realizar la instalación del programa de Vivado ya que no se pudo utilizar el correo institucional, el problema se solucionó al utilizar el correo personal. Por otro lado un siguiente problema se produjo durante la codificación de dos subsistemas, lo cuales correspondieron al refrescamiento de las luces al menos cada 500 ms dentro del despliegue de código ingresado traducido a formato binario en luces LED y el subsistema de despliegue de código decodificado en display de 7 segmentos, el inconveniente se presentó a la correcta implementación del subsistema, este requirió una mayor inversión de tiempo por parte de los estudiantes, mediante la investigación y la recolección de información para poder realizarse. Ade´mas  
+
+
 
