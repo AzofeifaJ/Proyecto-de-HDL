@@ -172,11 +172,11 @@ Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
 
 
 
-![image](https://user-images.githubusercontent.com/111375712/194966507-04d9886e-cb2c-412f-a379-c726ea5a94f0.png)
+![image](https://user-images.githubusercontent.com/111375712/194966714-c4e307e4-e173-424c-b1f1-05f80165443d.png)
 
 ![image](https://user-images.githubusercontent.com/111375712/194966572-f371b512-00ba-4ed7-bf59-593920aec6a1.png)
 
-![image](https://user-images.githubusercontent.com/111375712/194966629-b541fcaa-40c6-436f-a0e3-f70ddfe1cefb.png)
+![image](https://user-images.githubusercontent.com/111375712/194966748-b03ac4e1-0573-4895-974a-327d90c123bd.png)
 
 
 
