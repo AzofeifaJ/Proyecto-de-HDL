@@ -2,10 +2,10 @@
 ## Confección de un circuito decodificador de Gray
 
 ### Integrantes
-Azofeifa Jiménez Alonso,
-Brenes Espinoza Laura Elena,
-Luna Herrera José David,
-Moya Vargas Austin Joan,
+Azofeifa Jiménez Alonso;
+Brenes Espinoza Laura Elena;
+Luna Herrera José David;
+Moya Vargas Austin Joan;
 
 ### Objetivos
 
