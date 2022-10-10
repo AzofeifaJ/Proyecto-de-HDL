@@ -1,2 +1,2 @@
 # Proyecto-de-HDL
-Cofección de un circuito decodificador de Gray
+Confección de un circuito decodificador de Gray
