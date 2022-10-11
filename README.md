@@ -18,11 +18,16 @@ Introducir al estudiante al desarrollo de un sistema digital utilizando lenguaje
 5. Practicar planificación de tareas para trabajo de grupo.
 
 ## Descripción general
-Este proyecto consiste en el desarrollo de un circuito decodificador de Gray mediante utilización de Verilog y el suit de herramintas de Vivado, así como la implementación de diseño digital en una FPGA en este caso una NEXYS 4 DD para demostrar su funcionamiento, este proyecto consta de un subsistema de lectura y decodificación de código Gray además de un subsistema de despliegue de código ingresado traducido a formato binario en luces LED y así como un subsistema de despliegue de código ingresado y decodificado en display de 7 segmentos.
+Este proyecto consiste en el desarrollo de un circuito decodificador de Gray mediante utilización de Verilog y el suit de herramintas de Vivado, así como la implementación de diseño digital en una FPGA en este caso una NEXYS 4 ddr para demostrar su funcionamiento, este proyecto consta de un subsistema de lectura y decodificación de código Gray además de un subsistema de despliegue de código ingresado traducido a formato binario en luces LED y así como un subsistema de despliegue de código ingresado y decodificado en display de 7 segmentos.
 
 ## Descripción de cada subsistema
 ### Subsistema de lectura y decodificación de código Gray
 En este primer subsistema el programa traduce la entrada de cuatro conmutadores en código binario a formato del código de gray. La entrada del código es capturada y sincronizada con el sistema principal, para que se realice un muestreo de estos con una  duración de al menos cada 500 ms.
+
+#### Imagen correspondiente al Código Gray de 4 bits que se implementó
+
+![image](https://user-images.githubusercontent.com/111375712/194989182-d70d0202-ddf0-42c4-a5aa-75aeaf40c07f.png)
+
 
 #### Código binario a de gray 
 ```SystemVerilog
@@ -67,6 +72,11 @@ endmodule
 ### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED
 En este segundo subsistema se toma los datos ya pasados a código binario y los despliega en cuatro luces LED, además en esta sección se presenta el refrescamiento de las luces al menos cada 500 ms por parte sistema.
 
+#### Imagen correspondiente al encendido de LEDs en NEXYS 4 ddr
+
+![image](https://user-images.githubusercontent.com/111375712/194989319-14fcad98-e482-48d3-ba70-ff9cf3102c89.png)
+
+
 #### Código de encendido de leds de la NEXYS 4 y refrescamiento de las luces al menos cada 500 ms
 ```SystemVerilog
 
@@ -87,6 +97,10 @@ endmodule
 
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
 En este stercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles.
+
+
+#### Imagen de la distribución de pines en la NEXYS 4
+![image](https://user-images.githubusercontent.com/111375712/194989472-a5276744-b65a-47e5-b6a7-da2e06bcdfcc.png)
 
 #### Código decodificado en display de 7 segmentos. 
 ```SystemVerilog
@@ -172,11 +186,6 @@ Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
 
 
 
-![image](https://user-images.githubusercontent.com/111375712/194966714-c4e307e4-e173-424c-b1f1-05f80165443d.png)
-
-![image](https://user-images.githubusercontent.com/111375712/194966572-f371b512-00ba-4ed7-bf59-593920aec6a1.png)
-
-![image](https://user-images.githubusercontent.com/111375712/194966748-b03ac4e1-0573-4895-974a-327d90c123bd.png)
 
 
 
@@ -189,4 +198,4 @@ Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
 
 
 ## Problemas hallados durante el trabajo
-Durante el presente trabajo se generaron una serie de problemas desde su inicio, los cuales se detallan a continuación: el primer inconveniente se generó al realizar la instalación del programa de Vivado ya que no se pudo utilizar el correo institucional, el problema se solucionó al utilizar el correo personal. Por otro lado un siguiente problema se produjo durante la codificación de dos subsistemas, lo cuales correspondieron al refrescamiento de las luces al menos cada 500 ms dentro del despliegue de código ingresado traducido a formato binario en luces LED y el subsistema de despliegue de código decodificado en display de 7 segmentos, el inconveniente se presentó con la correcta implementación del subsistema, este requirió una mayor inversión de tiempo por parte de los estudiantes, mediante la investigación y la recolección de información para poder realizarse, además se logró solucionar con la ayuda del profesor durante la reunión realizada en la verificación del avance y el cumplimiento del plan de trabajo del proyecto.
+Durante el presente trabajo se generaron una serie de problemas desde su inicio, los cuales se detallan a continuación: el primer inconveniente se generó al realizar la instalación del programa de Vivado ya que no se pudo utilizar el correo institucional, el problema se solucionó al utilizar el correo personal. Otro inconveniente encontrado fue aprender la correcta utilización de la aplicación Vivado, ya que se encontraban una limitación en cuanto a la cantidad de contenido. Por otro lado, un siguiente problema se produjo durante la codificación de dos subsistemas, lo cuales correspondieron al refrescamiento de las luces al menos cada 500 ms dentro del despliegue de código ingresado traducido a formato binario en luces LED y el subsistema de despliegue de código decodificado en display de 7 segmentos, el inconveniente se presentó con la correcta implementación del subsistema, este requirió una mayor inversión de tiempo por parte de los estudiantes, mediante la investigación y la recolección de información para poder realizarse, además se logró solucionar con la ayuda del profesor durante la reunión realizada en la verificación del avance y el cumplimiento del plan de trabajo del proyecto.
