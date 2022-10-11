@@ -151,6 +151,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 #### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
 
+![image](https://user-images.githubusercontent.com/111375712/195004091-9a39c866-c90d-4a22-a132-96d8fb429332.png)
 
 
 
