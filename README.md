@@ -24,7 +24,7 @@ Este proyecto consiste en el desarrollo de un circuito decodificador de Gray med
 ### Subsistema de lectura y decodificación de código Gray
 En este primer subsistema el programa traduce la entrada de cuatro conmutadores en código binario a formato del código de gray. La entrada del código es capturada y sincronizada con el sistema principal, para que se realice un muestreo de estos con una  duración de al menos cada 500 ms.
 
-#### Código de gray a binario 
+#### Código binario a de gray 
 ```SystemVerilog
 //decodificación del código de gray, de contador binario a código de gray
 module binario_a_gray(bin,gray);
