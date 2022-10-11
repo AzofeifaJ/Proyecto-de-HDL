@@ -162,9 +162,6 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 
 
-## Diagramas de estado de las FSM diseñadas
-
-
 
 
 ## Simulación funcional del sistema completo
