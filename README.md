@@ -92,6 +92,29 @@ assign dp=1; //
 hex7seg D1(.x(sw), .a_to_g(a_to_g)); //hexadecimal a 7 segmentos
 
 endmodule
+
+  
+module oneHz_generator(
+    input clk_100MHz,
+    output clk_1Hz
+    );
+    
+    reg [25:0] counter_reg;
+    reg cl_reg = 0;
+    
+    always @(posedge clk_100MHz) begin
+        if(counter_reg==49_999_999) begin
+            counter_reg <= 0;
+            clk_out_reg <= ~clk_out_reg;
+        end
+        else
+            counter_reg <= counter_reg +1;
+    end
+    
+    assign clk_1Hz = clk_out_reg;
+    
+endmodule 
+
 ```
 
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
@@ -134,7 +157,49 @@ module hex7seg(
     'hF: a_to_g = 7'b0111000;
     default: a_to_g = 7'b0000001;
  endcase
- end endmodule    
+ end endmodule  
+ 
+ 
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {an[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports dp]
+set_property PACKAGE_PIN J15 [get_ports {sw[0]}]
+set_property PACKAGE_PIN L16 [get_ports {sw[1]}]
+set_property PACKAGE_PIN M13 [get_ports {sw[2]}]
+set_property PACKAGE_PIN R15 [get_ports {sw[3]}]
+set_property PACKAGE_PIN H15 [get_ports dp]
+set_property PACKAGE_PIN T10 [get_ports {a_to_g[0]}]
+set_property PACKAGE_PIN R10 [get_ports {a_to_g[1]}]
+set_property PACKAGE_PIN K16 [get_ports {a_to_g[2]}]
+set_property PACKAGE_PIN K13 [get_ports {a_to_g[3]}]
+set_property PACKAGE_PIN P15 [get_ports {a_to_g[4]}]
+set_property PACKAGE_PIN T11 [get_ports {a_to_g[5]}]
+set_property PACKAGE_PIN L18 [get_ports {a_to_g[6]}]
+set_property PACKAGE_PIN J17 [get_ports {an[0]}]
+set_property PACKAGE_PIN J18 [get_ports {an[1]}]
+set_property PACKAGE_PIN T9 [get_ports {an[2]}]
+set_property PACKAGE_PIN J14 [get_ports {an[3]}]
+set_property PACKAGE_PIN P14 [get_ports {an[4]}]
+set_property PACKAGE_PIN T14 [get_ports {an[5]}]
+set_property PACKAGE_PIN K2 [get_ports {an[6]}]
+set_property PACKAGE_PIN U13 [get_ports {an[7]}]
 ```
 
 ## Diagramas de bloques de cada subsistema
