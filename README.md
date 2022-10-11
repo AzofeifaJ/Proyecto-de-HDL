@@ -22,7 +22,7 @@ Este proyecto consiste en el desarrollo de un circuito decodificador de Gray med
 
 ## Descripción de cada subsistema
 ### Subsistema de lectura y decodificación de código Gray
-En este primer subsistema el programa traduce la entrada de cuatro conmutadores en código binario a formato del código de gray. La entrada del código es capturada y sincronizada con el sistema principal, para que se realice un muestreo de estos con una  duración de al menos cada 500 ms.
+En este primer subsistema el programa traduce la entrada de cuatro conmutadores en código binario a formato del código de gray. La entrada del código es capturada y sincronizada con el sistema principal, para que posterior se realice un muestreo de estos con una duración de al menos cada 500 ms. Como se muestra en la imagen a continuación la implementación y la correcta trasformación del Código de Gray de 4 bits a partir de un Código Binario necesario para llevar a cabo este circuito. 
 
 #### Imagen correspondiente al Código Gray de 4 bits que se implementó
 
