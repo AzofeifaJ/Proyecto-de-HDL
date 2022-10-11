@@ -141,7 +141,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 #### Funcionamiento general
 
-![image](https://user-images.githubusercontent.com/111375712/194991362-554aed57-e9a2-405d-b81b-2c1c9bf3b09a.png)
+![image](https://user-images.githubusercontent.com/111375712/194991462-d48480df-e673-473d-bbab-b547341c9d87.png)
 
 
 #### Subsistema de lectura y decodificación de código Gray.
