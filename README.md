@@ -155,7 +155,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 #### Subsistema de despliegue de código decodificado en display de 7 segmentos.
 
-
+![image](https://user-images.githubusercontent.com/111375712/195007407-d2117e71-2a9f-4762-8248-d80f09db92d0.png)
 
 
 ## Simulación funcional del sistema completo
