@@ -68,7 +68,6 @@ end
 endmodule
 ```
 
-
 ### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED
 En este segundo subsistema se toma los datos ya pasados a código binario y los despliega en cuatro luces LED, además en esta sección se presenta el refrescamiento de las luces al menos cada 500 ms por parte sistema.
 
@@ -172,7 +171,6 @@ Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
 ![image](https://user-images.githubusercontent.com/111375712/194734288-56ff2af4-d5b1-48fe-a763-d41032d04a6e.png)
 
 ![image](https://user-images.githubusercontent.com/111375712/194966269-b75db593-a7e6-476a-a9e0-6353bafa2141.png)
-
 
 
 ## Problemas hallados durante el trabajo
