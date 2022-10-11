@@ -145,8 +145,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 #### Subsistema de lectura y decodificación de código Gray.
 
-
-
+![image](https://user-images.githubusercontent.com/111375712/195005241-1a05e60b-4756-47b6-954b-0d69142a000e.png)
 
 
 #### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
@@ -154,12 +153,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 ![image](https://user-images.githubusercontent.com/111375712/195004091-9a39c866-c90d-4a22-a132-96d8fb429332.png)
 
 
-
-
 #### Subsistema de despliegue de código decodificado en display de 7 segmentos.
-
-
-
 
 
 
