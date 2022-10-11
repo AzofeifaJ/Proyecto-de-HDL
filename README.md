@@ -69,7 +69,7 @@ endmodule
 ```
 
 ### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED
-En este segundo subsistema se toma los datos ya pasados a código binario y los despliega en cuatro luces LED, además en esta sección se presenta el refrescamiento de las luces al menos cada 500 ms por parte sistema.
+En este segundo subsistema se toma los datos ya pasados a código binario y los despliega en cuatro luces LED, además en esta sección se presenta el refrescamiento de las luces al menos cada 500 ms por parte sistema, en esta sección es importante mencionar que en cuanto al funcionamiento del LED la corriente siempre fluye de ánodo a cátodo, en el cual el ánodo se conecta al voltaje positivo de la fuente y el cátodo se conecta a tierra o al voltaje negativo de la fuente, representado en la siguiente imagen.
 
 #### Imagen correspondiente al encendido de LEDs en NEXYS 4 ddr
 
