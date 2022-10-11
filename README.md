@@ -96,10 +96,9 @@ endmodule
 ```
 
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
-En este stercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles.
+En este tercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles, para realziar esta parte es importante mencionar la conexión de los pines a la FPGA de la NEXYS4 ddr la cual es necesaria para asignar el valor al encendido de los 7 segmentos numerados de A a G según corresponda para mostrar cada determinado valor, como se muestra en la imagen a continuación: 
 
-
-#### Imagen de la distribución de pines en la NEXYS 4
+#### Imagen de la distribución de pines en la NEXYS 4 ddr
 ![image](https://user-images.githubusercontent.com/111375712/194989472-a5276744-b65a-47e5-b6a7-da2e06bcdfcc.png)
 
 #### Código decodificado en display de 7 segmentos. 
