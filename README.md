@@ -159,7 +159,7 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 ## Simulación funcional del sistema completo
 
-Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL
+Realización de las pre-síntesis, mediante la simulaciones a nivel de RTL.
 En esta sección se puede detallar las comprobaciones realizadas de los sistemas sobre la NEXYS 4 ddr, las cuales se realizaron por medio de videollamadas entre los integrantes del grupo para observar y realizar el correcto funcionamiento del circuito.
 
 #### Sesiones realizadas entre los integrantes del grupo para visualizar el procedimiento realizado en Verilog para NEXYS 4
