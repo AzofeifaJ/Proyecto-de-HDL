@@ -6,17 +6,6 @@
 3. Luna Herrera José David
 4. Moya Vargas Austin Joan
 
-## Objetivos
-### Objetivo general
-Introducir al estudiante al desarrollo de un sistema digital utilizando lenguajes de descripción de hardware.
-
-### Objetivos específicos
-1. Elaborar una implementación de un diseño digital en una FPGA.
-2. Construir un testbench básico para validar las especificaciones del diseño.
-3. Implementar el algoritmo de generación de los códigos de Gray.
-4. Coordinación de trabajo en equipo mediante el uso de herramientas de control de versiones.
-5. Practicar planificación de tareas para trabajo de grupo.
-
 ## Descripción general
 Este proyecto consiste en el desarrollo de un circuito decodificador de Gray mediante utilización de Verilog y el suit de herramintas de Vivado, así como la implementación de diseño digital en una FPGA en este caso una NEXYS 4 ddr para demostrar su funcionamiento, este proyecto consta de un subsistema de lectura y decodificación de código Gray además de un subsistema de despliegue de código ingresado traducido a formato binario en luces LED y así como un subsistema de despliegue de código ingresado y decodificado en display de 7 segmentos.
 
