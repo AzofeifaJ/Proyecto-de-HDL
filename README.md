@@ -115,40 +115,11 @@ En este tercer subsistema tiene la tasa de refresco para la adecuada visualizaci
 #### Imagen de la distribución de pines del display de 7 segmentos
 ![image](https://user-images.githubusercontent.com/111375712/194989472-a5276744-b65a-47e5-b6a7-da2e06bcdfcc.png)
 
-#### Código decodificado en display de 7 segmentos. 
+
+Es importante mencionar que a continuación se muestra la programación realizada en Verilog sobre la distribución de los  los pines display de 7 segmentos.
+
 ```SystemVerilog
-// función hexadecimal a 7 segmentos
-module hex7seg(
-    input wire [3:0]x,
-    output reg [6:0]a_to_g //conectado de a a g
-    );
-    
- always@(*)
- begin
  
- //Casos en los interruptores para mostral los números
-    case(x)
-    0: a_to_g = 7'b0000001;
-    1: a_to_g = 7'b1001111;
-    2: a_to_g = 7'b0010010;
-    3: a_to_g = 7'b0000110;
-    4: a_to_g = 7'b1001100;
-    5: a_to_g = 7'b0100100;
-    6: a_to_g = 7'b0100000;
-    7: a_to_g = 7'b0001111;
-    8: a_to_g = 7'b0000000;
-    9: a_to_g = 7'b0000100;
-    'hA: a_to_g = 7'b0001000;
-    'hB: a_to_g = 7'b1100000;
-    'hC: a_to_g = 7'b0110001;
-    'hD: a_to_g = 7'b1000010;
-    'hE: a_to_g = 7'b0110000;
-    'hF: a_to_g = 7'b0111000;
-    default: a_to_g = 7'b0000001;
- endcase
- end endmodule  
- 
-// distribución de los pines display de 7 segmentos
 set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[6]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[5]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[4]}]
