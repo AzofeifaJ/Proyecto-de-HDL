@@ -196,12 +196,12 @@ A continuación se muestra un diagrama de bloques sobre el funcionamiento genera
 
 #### Funcionamiento general
 
-![image](https://user-images.githubusercontent.com/111375712/194991462-d48480df-e673-473d-bbab-b547341c9d87.png)
+![image](https://user-images.githubusercontent.com/111375712/195467262-3b9fc74c-599e-490e-a949-47ed4cb39ac9.png)
 
 
 #### Subsistema de lectura y decodificación de código Gray.
 
-![image](https://user-images.githubusercontent.com/111375712/195005241-1a05e60b-4756-47b6-954b-0d69142a000e.png)
+![image](https://user-images.githubusercontent.com/111375712/195467288-3398b559-5165-4557-b938-326489b88016.png)
 
 
 #### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
