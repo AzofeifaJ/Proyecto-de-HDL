@@ -1,4 +1,4 @@
-//encendido de LEDS en la NEXYS4
+ //encendido de LEDS en la NEXYS4
 module disenodigital(
 input wire [3:0] sw,
 output wire [6:0] a_to_g,
@@ -20,10 +20,10 @@ module oneHz_generator(
     );
     
     reg [25:0] counter_reg;
-    reg cl_reg = 0;
+    reg clk_out_reg = 0;
     
     always @(posedge clk_100MHz) begin
-        if(counter_reg==49_999_999) begin
+        if(counter_reg==49999999) begin
             counter_reg <= 0;
             clk_out_reg <= ~clk_out_reg;
         end
