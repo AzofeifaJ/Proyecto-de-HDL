@@ -1,8 +1,8 @@
 //decodificación del código de gray, de contador binario a código de gray
-module binario_a_gray(bin,gray);
+module gray_a_binario(gray,bin);
 
-input [3:0] bin;
-output [3:0] gray;
+input [3:0] gray;
+output [3:0] bin;
 
 assign gray[3]=bin[3];
 assign gray[2]=bin[3]^bin[2];
@@ -12,13 +12,13 @@ assign gray[0]=bin[1]^bin[0];
 endmodule
 
 //decodificación del código de gray, de contador binario a codigo de gray
-module binario_a_gray_tb();
+module gray_a_binario_tb();
 
-reg [3:0] in;
-wire [3:0] outbin, outgray;
+reg [3:0] gray;
+wire [3:0] outgray, outbin;
 
-binario_a_gray dut1 (.bin(in), .gray(outgray));
-binario_a_gray dut2 (.gray(in), .bin(outbin));
+gray_a_binario dut1 (.bin(in), .gray(outgray));
+gray_a_binario dut2 (.gray(in), .bin(outbin));
 
 initial begin
 in=4'b0000;
@@ -34,5 +34,3 @@ $stop;
 end
 endmodule
 
-
- 
