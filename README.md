@@ -1,5 +1,13 @@
 # Proyecto II: Introducción a diseño digital en HDL.
 
+![image](https://user-images.githubusercontent.com/111375712/195476581-b4a65f14-fa37-4b95-a1a7-ba00fbd7c58a.png)
+
+## Instituto Tecnológico de Costa Rica
+## EL 3307: Diseño Lógico
+## Grupo 20
+## Profesor: Ing. Kaleb Alfaro Badilla
+## II Semestre 2022
+
 ## Integrantes
 1. Azofeifa Jiménez Alonso
 2. Brenes Espinoza Laura Elena
@@ -200,6 +208,13 @@ En esta sección se puede detallar las comprobaciones realizadas de los sistemas
 ![image](https://user-images.githubusercontent.com/111375712/194734288-56ff2af4-d5b1-48fe-a763-d41032d04a6e.png)
 
 ![image](https://user-images.githubusercontent.com/111375712/194966269-b75db593-a7e6-476a-a9e0-6353bafa2141.png)
+
+
+
+
+## Análisis de consumo de recursos en la FPGA (LUTs, FFs, etc.) y del consumo de potencia que reporta la herramienta Vivado.
+
+![image](https://user-images.githubusercontent.com/111375712/195476539-44c1bf45-9369-4990-a285-8e7ea8d7cbd1.png)
 
 
 ## Problemas hallados durante el trabajo
