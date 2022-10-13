@@ -30,6 +30,7 @@ module hex7seg(
  endcase
  end endmodule    
 
+
 // distribución de los pines display de 7 segmentos
 set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[6]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {a_to_g[5]}]
