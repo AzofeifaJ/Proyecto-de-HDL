@@ -2,17 +2,19 @@
 
 ![image](https://user-images.githubusercontent.com/111375712/195476581-b4a65f14-fa37-4b95-a1a7-ba00fbd7c58a.png)
 
-## Instituto Tecnológico de Costa Rica
-## EL 3307: Diseño Lógico
-## Grupo 20
-## Profesor: Ing. Kaleb Alfaro Badilla
-## II Semestre 2022
+### Instituto Tecnológico de Costa Rica
+### EL 3307: Diseño Lógico
+### Grupo 20
+### Profesor: Ing. Kaleb Alfaro Badilla
 
-## Integrantes
+### Integrantes
 1. Azofeifa Jiménez Alonso
 2. Brenes Espinoza Laura Elena
 3. Luna Herrera José David
 4. Moya Vargas Austin Joan
+
+### II Semestre 2022
+
 
 ## Descripción general
 Este proyecto consiste en el desarrollo de un circuito decodificador de Gray mediante utilización de Verilog y el suit de herramintas de Vivado, así como la implementación de diseño digital en una FPGA en este caso una NEXYS 4 ddr para demostrar su funcionamiento, este proyecto consta de un subsistema de lectura y decodificación de código Gray además de un subsistema de despliegue de código ingresado traducido a formato binario en luces LED y así como un subsistema de despliegue de código ingresado y decodificado en display de 7 segmentos.
@@ -26,45 +28,6 @@ En este primer subsistema el programa traduce la entrada de cuatro conmutadores 
 ![image](https://user-images.githubusercontent.com/111375712/194989182-d70d0202-ddf0-42c4-a5aa-75aeaf40c07f.png)
 
 
-#### Código Gray a Binario 
-```SystemVerilog
-//decodificación del código de gray, de contador binario a código de gray
-module binario_a_gray(bin,gray);
-
-input [3:0] bin;
-output [3:0] gray;
-
-assign gray[3]=bin[3];
-assign gray[2]=bin[3]^bin[2];
-assign gray[1]=bin[2]^bin[1];
-assign gray[0]=bin[1]^bin[0];
-
-endmodule
-
-//decodificación del código de gray, de contador binario a codigo de gray
-module binario_a_gray_tb();
-
-reg [3:0] in;
-wire [3:0] outbin, outgray;
-
-binario_a_gray dut1 (.bin(in), .gray(outgray));
-binario_a_gray dut2 (.gray(in), .bin(outbin));
-
-initial begin
-in=4'b0000;
-#10
-
-in=4'b0110;
-#10
-
-in=4'b1011;
-#10
-
-$stop;
-end
-endmodule
-```
-
 ### Subsistema de despliegue de código ingresado traducido a formato binario en luces LED
 En este segundo subsistema se toma los datos ya pasados a código binario y los despliega en cuatro luces LED, además en esta sección se presenta el refrescamiento de las luces al menos cada 500 ms por parte sistema, en esta sección es importante mencionar que en cuanto al funcionamiento del LED la corriente siempre fluye de ánodo a cátodo, en el cual el ánodo se conecta al voltaje positivo de la fuente y el cátodo se conecta a tierra o al voltaje negativo de la fuente, representado en la siguiente imagen.
 
@@ -73,46 +36,7 @@ En este segundo subsistema se toma los datos ya pasados a código binario y los 
 ![image](https://user-images.githubusercontent.com/111375712/194989319-14fcad98-e482-48d3-ba70-ff9cf3102c89.png)
 
 
-#### Código de encendido de leds de la NEXYS 4 y refrescamiento de las luces al menos cada 500 ms
-```SystemVerilog
 
-//encendido de LEDS en la NEXYS4
-module disenodigital(
-input wire [3:0] sw,
-output wire [6:0] a_to_g,
-output wire [7:0] an,
-output wire dp
-    );
- 
-assign an=8'b11111110; //habilitación de dígitos
-assign dp=1; //
-hex7seg D1(.x(sw), .a_to_g(a_to_g)); //hexadecimal a 7 segmentos
-
-endmodule
-
-  
-module oneHz_generator(
-    input clk_100MHz,
-    output clk_1Hz
-    );
-    
-    reg [25:0] counter_reg;
-    reg cl_reg = 0;
-    
-    always @(posedge clk_100MHz) begin
-        if(counter_reg==49_999_999) begin
-            counter_reg <= 0;
-            clk_out_reg <= ~clk_out_reg;
-        end
-        else
-            counter_reg <= counter_reg +1;
-    end
-    
-    assign clk_1Hz = clk_out_reg;
-    
-endmodule 
-
-```
 
 ### Subsistema de despliegue de código decodificado en display de 7 segmentos.
 En este tercer subsistema tiene la tasa de refresco para la adecuada visualización, se toma los datos en código binario anteriormente ralizado y se procede a desplegar los dispositivos 7 segmentos disponibles, para realziar esta parte es importante mencionar la conexión de los pines a la FPGA de la NEXYS4 ddr la cual es necesaria para asignar el valor al encendido de los 7 segmentos numerados de A a G según corresponda para mostrar cada determinado valor, como se muestra en la imagen a continuación: 
